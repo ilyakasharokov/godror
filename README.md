@@ -1,4 +1,4 @@
-![Go](https://github.com/godror/godror/workflows/Go/badge.svg)
+![Go](https://github.com/ilyakasharokov/godror/workflows/Go/badge.svg)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/godror/godror)](https://pkg.go.dev/github.com/godror/godror)
 [![Go Report Card](https://goreportcard.com/badge/github.com/godror/godror)](https://goreportcard.com/report/github.com/godror/godror)
 [![codecov](https://codecov.io/gh/godror/godror/branch/master/graph/badge.svg)](https://codecov.io/gh/godror/godror)
@@ -227,7 +227,7 @@ in place, just set up different remotes:
 
 ```bash
 cd $GOPATH/src/github.com/godror/godror
-git remote add upstream https://github.com/godror/godror.git
+git remote add upstream https://github.com/ilyakasharokov/godror.git
 git fetch upstream
 git checkout -b master upstream/master
 
@@ -277,7 +277,7 @@ error is retrieved on the same thread as the prvious function executed on.
 
 This means we have to encapsulate each execute-then-retrieve-error sequence in
 `runtime.LockOSThread()` and `runtime.UnlockOSThread()`.
-For details, see [#120](https://github.com/godror/godror/issues/120).
+For details, see [#120](https://github.com/ilyakasharokov/godror/issues/120).
 
 This is automatically detected by [go run ./check](./check/check.go) which should be called 
 in the pre-commit hook.
